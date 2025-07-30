@@ -1052,7 +1052,8 @@ function OffsetMemoCalculator() {
                   className="w-full justify-center py-2"
                 >
                   Price per memo:{" "}
-                  {(calculations.finalPrice / calc.totalOrder).toFixed(2)} TK
+                  {(calculations.finalPrice / calc.totalOrder * 100).toFixed(2)}
+                  TK
                 </Badge>
               </div>
             </CardContent>

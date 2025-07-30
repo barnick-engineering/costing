@@ -239,7 +239,7 @@ function VisitingCardCalculator() {
 
     // Calculate final price
     const finalPrice =
-      totalProductionCost + totalProductionCost * calc.profitMargin;
+      totalProductionCost + (totalProductionCost * calc.profitMargin) / 100;
 
     setCalculations({
       sheetsRequired,
@@ -723,7 +723,7 @@ function OffsetMemoCalculator() {
       calculations.packagingCost;
 
     // Calculate final price
-    const finalPrice = totalCost + totalCost * calc.profitMargin;
+    const finalPrice = totalCost + (totalCost * calc.profitMargin) / 100;
 
     setCalculations({
       totalSheets,
